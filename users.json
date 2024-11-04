@@ -1,0 +1,41 @@
+[
+    {
+        "id": "8273e15b-5e85-4ae5-b0ee-7577f545ee44",
+        "username": "123",
+        "password": "123",
+        "image": "",
+        "locations": []
+    },
+    {
+        "id": "ecffe58d-d3da-4a4f-b05e-77055068271a",
+        "username": "Bataa",
+        "password": "123",
+        "image": "123",
+        "locations": [
+            {
+                "id": "9fe71063-7e48-4d64-887f-d70086b069b6",
+                "name": "123",
+                "description": "123",
+                "lat": "123",
+                "long": "123",
+                "image": "123"
+            }
+        ]
+    },
+    {
+        "id": "e091d0ab-4e63-4d25-bf10-a2e1d0c1d11f",
+        "username": "BOLOROOOO",
+        "password": "123",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeDaGSm_5tPlw5YjiBOxw5hX0Q4aNqLyiJRxUzRIq8e3XEbawcf7e2n2mzhwHWx4dA-s&usqp=CAU",
+        "locations": [
+            {
+                "id": "0513b13d-f493-4966-bd4a-c909c8bb9fae",
+                "name": "BOLOR's House",
+                "description": "Bolor end haayaa irj untdag bas iddeg",
+                "lat": "247",
+                "long": "666",
+                "image": "https://fancyhouse-design.com/wp-content/uploads/2024/05/A-black-trendsetting-propertie-for-the-luxury-living.jpg"
+            }
+        ]
+    }
+]
