@@ -1,41 +1,26 @@
 [
-    {
-        "id": "8273e15b-5e85-4ae5-b0ee-7577f545ee44",
-        "username": "123",
-        "password": "123",
-        "image": "",
-        "locations": []
-    },
-    {
-        "id": "ecffe58d-d3da-4a4f-b05e-77055068271a",
-        "username": "Bataa",
-        "password": "123",
-        "image": "123",
-        "locations": [
-            {
-                "id": "9fe71063-7e48-4d64-887f-d70086b069b6",
-                "name": "123",
-                "description": "123",
-                "lat": "123",
-                "long": "123",
-                "image": "123"
-            }
-        ]
-    },
-    {
-        "id": "e091d0ab-4e63-4d25-bf10-a2e1d0c1d11f",
-        "username": "BOLOROOOO",
-        "password": "123",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeDaGSm_5tPlw5YjiBOxw5hX0Q4aNqLyiJRxUzRIq8e3XEbawcf7e2n2mzhwHWx4dA-s&usqp=CAU",
-        "locations": [
-            {
-                "id": "0513b13d-f493-4966-bd4a-c909c8bb9fae",
-                "name": "BOLOR's House",
-                "description": "Bolor end haayaa irj untdag bas iddeg",
-                "lat": "247",
-                "long": "666",
-                "image": "https://fancyhouse-design.com/wp-content/uploads/2024/05/A-black-trendsetting-propertie-for-the-luxury-living.jpg"
-            }
-        ]
-    }
+  {
+    "id": "c8b611c9-e61c-4972-9fa9-1cdcacd3faed",
+    "username": "Xvclenn",
+    "password": "123",
+    "image": "https://cdn.vectorstock.com/i/1000v/11/41/male-profile-picture-vector-2051141.jpg",
+    "locations": [
+      {
+        "id": "7421679b-038d-431f-b39e-f8180feb4547",
+        "name": "Mongolia",
+        "description": "Mongolia",
+        "lat": "123",
+        "long": "123",
+        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAACCCAMAAACXSEZJAAAAeFBMVEXaIDIAZrP/2QD/3gDYADTcHi/FMFAAarqHTYXfGynZDTP/4AD/4gDskSHZGDP/2wDrjCLndifwoxzhWSz7zA35xw/jXCncLjDzqBjfQy31sBXtliD/5gDgTSzpeyPhUSvqgSLlayf4vRH90gbkZCndOi/wnhz3txIwo91qAAAFFklEQVR4nO2b3ZLyNgyG1djt11rG4ichJATyR9j7v8PaTiCwbJfMdPbgs/weEWN21s9ItiQrAD+hP//69cdP6O9/fuTf/RlFCBAheEUIECF4RQgQIXhFCBAheEUIECF4BQzBLJ4ZLgTTLp4aLoRipZZODRaCuawjBBgyuXRquBCUaJaaQqgQctjpJF84OVQIB5kRtodlHhEmBHUuhyrRl/60KFgIFMKKBqSkri6cIaS9ysRh0OUifwgSgrpWJ1nqtTxXmyWmECQE02OTp+LDbLFbYgphQkgIK0qoErQoYgoSguwoGSWuSwKmICGYVo8MCAu2ewLIg3a2QLrhezpYCusEEfuWc8RoT0mza2u5MIMKFQIYKeXSAlugEJTZN6umVstMIUgIBq6JRoG6bxTX00GdehwDBdJZvoBCgBBMIW6xko2W0gW/CBFCOjOwFBYkkuFBUI1OHqV3bx0iQAgZPUEQ72ts4UHInw0hoZ4fBLP7DIHeFp3Dg7D/BCFhCAGGF3fgtjHa9ar+eWOk9xW2sCCYWoHaiucjcmMTiOLbn4UFQa1OBgbxaAqUWi6b7+8fwoJgNpkEdX7YFQhru/6EkyVAXl0lyLW+2QKJ1j53b0KFwCDITB/tqi+pFkQkdFcoo0pH5jsFBkFtNJaglLpsu7S77qSRQ4fvas6BQXCZg+jPrrY2Kl9Zg3iXPYQGwZyQCPttW+SQF5uS7GP/7kehQXAOQXY/1OhOBkvA5g5vL2CCgwCyHeMEuzH6TLov3lZbw4MAquj0FC+RwMOCztYAIYCR+9JdQKHotwXbW2mLwRSXdj+oZfcvAUAw6i6XRE7yB+Q8/DApRAhmf1xNOtYmX92f7jo2YNr56TWP+P0hqJUWk6qNMkNZoXiU1ld/V3+f9Fp9DgDC+l4/QFc6kPsU51ya9IfbG+VcZPiiBB8eBOv+a7oNuRYFt2Z2EOxQXnpjIHE04whDCM4nMm09YbhFCSwhOJ9I2zlK4AnBBQwPi+UFQcmvZFhBkE2fvqo/8YKwRnqVrplBeL55mdbNDYIWr6p2rCCo/Wv+ZHOmgRcE85hKz9kzLwjjmJGquLQnxTlYksW2d+W1dC+Bae5g1BWFK7sT4WUYm/25QTCQof0sumtK1MvS9zGyg5C5Z3Gw+2JG+tJWB35FFXnAMT4y7htsCq3P3E4HU48dGuj6Eq4Cz7WmhJslyHK6e+r3+VkQDg0m2CheEICmIish2eW7l+cTyiQvCHMrp8seO+m6vSnJWUGQZxw/Cuyzj1Zu/HfIrZ7gH0gcc5s7nMaiM7tU2lsCJYVcd2mP0zfMLGHcE8Qp75Ho3sfHbE/wp4PYShsxa4E3CNxOB1kKa/0bPcYJ0zC3OMFGjETqIKaIcfQGbhGjXS4mNmyccge/ana5g2vn1PlRTFmkWzTDLNIqbQad+HqC6084cKwnAJi1WtudwVWXkHhWlhwFkOe+0lqnq5xpjXEcNXW7y++tarwgzK16jO8d4g1UvItM4q30HcJX/QkVMwjnNHsVs04VZb7sWWJ2Osxt7g/iFifk10/93UJobJhBAFl0+uldaX0AbsGSa9BoE5wRZDXPLFKZ62QMwiaRfsn8IMDkE6MnAAsIT2++TIPOJ6rREyYIYb/58vwO1H1YwUOTO5h2nhTiO1Cf3oZ7GP+PSa9/IQAI/18RAkQIXhECRAheEQJECF4RAkQIXhECRAheEQJECF4RAkQIXhECRAheEQL8dhD+BXGgsK+rcPjfAAAAAElFTkSuQmCC"
+      },
+      {
+        "id": "1c47402a-2053-4a9e-a9b9-cda85ce318a8",
+        "name": "France",
+        "description": "France",
+        "lat": "123",
+        "long": "123",
+        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAACtCAMAAABhsvGqAAAAFVBMVEX///8AJlTOESYAGk56fY/ce33NABrfQkIOAAAA5UlEQVR4nO3QSQEAIAADoHn2j2yKvYQIZDSsnYpzZ0MkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQYIECRIkSJAgQcL3CQ86tbh+5X8kwAAAAABJRU5ErkJggg=="
+      }
+    ]
+  }
 ]
