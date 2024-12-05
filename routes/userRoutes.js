@@ -10,19 +10,21 @@ const {
     deleteUserLocation,
     getAllLocations,
 } = require("../controllers/userController");
+const verifyToken = require("../middleware/authMiddleware");
 
-// User routes
-router.get("/", getAllUsers); // Get all users
-router.get("/:id", getUserById); // Get a user by ID
+router.get("/", getAllUsers);
+router.get("/:id", verifyToken, getUserById);
 
-// User location routes
-router.get("/:id/locations", getUserLocations); // Get all locations for a user
-router.get("/:userId/locations/:locationId", getUserOneLocation); // Get a specific location for a user
-router.post("/:userId/locations", addUserLocation); // Add a new location to a user
-router.put("/:userId/locations/:locationId", editUserLocation); // Edit a user's location
-router.delete("/:userId/locations/:locationId", deleteUserLocation); // Delete a user's location
+router.get("/:id/locations", getUserLocations);
+router.get("/:userId/locations/:locationId", getUserOneLocation);
+router.post("/:userId/locations", verifyToken, addUserLocation);
+router.put("/:userId/locations/:locationId", verifyToken, editUserLocation);
+router.delete(
+    "/:userId/locations/:locationId",
+    verifyToken,
+    deleteUserLocation
+);
 
-// General locations route
-router.get("/locations/all", getAllLocations); // Get all locations
+router.get("/locations/all", getAllLocations);
 
 module.exports = router;

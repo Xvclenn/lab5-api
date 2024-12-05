@@ -1,3 +1,4 @@
+//index.js
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -5,6 +6,7 @@ const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const connectDB = require("./config/db");
+const verifyToken = require("./middleware/authMiddleware");
 
 const app = express();
 const PORT = process.env.PORT || 8000;
@@ -21,7 +23,6 @@ app.get("/", (req, res) => {
     res.send(`API is running on ${PORT} : Port`);
 });
 
-// Start server
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
