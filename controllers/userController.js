@@ -59,13 +59,19 @@ const getUserOneLocation = async (req, res) => {
 const addUserLocation = async (req, res) => {
     try {
         const { userId } = req.params;
-        const locationData = req.body;
-
-        const location = new Location(locationData);
-        await location.save();
+        const { name, description, lat, long, image } = req.body;
 
         const user = await User.findById(userId);
         if (!user) return res.status(404).json({ error: "User not found" });
+        const location = new Location({
+            name,
+            description,
+            lat,
+            long,
+            image: image || "https://default-image-url.com",
+            createdBy: user._id,
+        });
+        await location.save();
 
         user.locations.push(location._id);
         await user.save();
@@ -97,19 +103,31 @@ const deleteUserLocation = async (req, res) => {
     try {
         const { userId, locationId } = req.params;
 
-        const user = await User.findById(userId);
-        if (!user) return res.status(404).json({ error: "User not found" });
-
-        user.locations.pull(locationId);
-        await user.save();
-
-        const deletedLocation = await Location.findByIdAndDelete(locationId);
-        if (!deletedLocation)
+        const location = await Location.findById(locationId);
+        if (!location) {
             return res.status(404).json({ error: "Location not found" });
+        }
 
-        res.status(200).json({ message: "Location deleted successfully" });
+        if (location.createdBy.toString() !== userId) {
+            return res.status(403).json({
+                error: "You are not authorized to delete this location",
+            });
+        }
+
+        await Location.findByIdAndDelete(locationId);
+
+        const user = await User.findById(userId);
+        if (user) {
+            user.locations.pull(locationId);
+            await user.save();
+        }
+
+        return res
+            .status(200)
+            .json({ message: "Location deleted successfully" });
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        console.error("Error deleting location: ", err);
+        return res.status(500).json({ error: err.message });
     }
 };
 

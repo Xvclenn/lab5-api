@@ -1,5 +1,6 @@
 //models/Location.js
 const mongoose = require("mongoose");
+const User = require("./User");
 
 const locationSchema = new mongoose.Schema({
     name: {
@@ -19,6 +20,11 @@ const locationSchema = new mongoose.Schema({
     },
     image: {
         type: String,
+    },
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        required: true,
     },
 });
 
